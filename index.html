@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Coming Soon</title>
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      background-color: #282c34;
+      color: #61dafb;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 4rem;
+      margin: 0 0 20px 0;
+    }
+    p {
+      font-size: 1.5rem;
+      margin: 0 0 40px 0;
+    }
+    footer {
+      font-size: 0.9rem;
+      color: #888;
+      position: fixed;
+      bottom: 20px;
+      width: 100%;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <!-- Load React, ReactDOM, and Babel from CDN -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <!-- React JSX code -->
+  <script type="text/babel">
+    const ComingSoon = () => (
+      <>
+        <h1>Coming Soon</h1>
+        <p>We are working hard to bring something awesome. Stay tuned!</p>
+        <footer>© 2025 Your Company Name</footer>
+      </>
+    );
+
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<ComingSoon />);
+  </script>
+</body>
+</html>
